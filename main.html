@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tick Studio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='tic.css'>
+    <script src='tic.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- cabeçalho com as opções-->
+    <header class="header">
+        <a href="#" class="logo">Tick Studio</a>
+        <i class='bx bx-menu' id="menu-btn"></i>
+        <nav class="menu-bar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#work">Trabalho</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-bio">
+            <h3>Olá, nós somos a</h3>
+            <h1>Tick Studio</h1>
+            <h3>Registramos <span class="multiple-text"></span></h3>
+
+            <p>"Guarde suas memórias, sua vida em cada Take".</p>
+            <p style="margin-left: 80%;">By Dione</p>
+        </div>
+        <div class="profile-pic">
+            <img src="/_Imagens/tickstudio2.png" alt="">
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Sobre <span>Nós</span></h2>
+        </div>
+        <div class="pic-about">
+            <img  src="/_Imagens/equipe.jpg" alt="">
+        </div>
+        <div class="about-items">
+            <div class="about-text">
+                <p>Bem-vindo a Tick Studio. Fundada por nós, 
+                    Renan Mattos, Nicolas Sanfelice, Miguel Ignani, 
+                    Lucas Mantovani e Kaue Rodrigues em 12th Dezembro 2023, 
+                    temos a finalidade de registrar e preservar momentos de nossos clientes, 
+                    garantindo um serviço profissional de qualidade. O fundamento central de nossa empresa, 
+                    é que acreditamos que cada bom momento merece ser lembrado. Abrace sua história, registre-a hoje.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- work Section -->
+
+    <section class="skills" id="work">
+        <div class="heading">
+            <h2>Nossos <span>Trabalhos</span> </h2>
+        </div>
+
+        <div class="skills-items">
+            <div class="skill-card">
+                <img src="/_Imagens/casamento.jpeg" alt=""><br>
+                <h3 class="concerto" style="color: black;">Casamento de Nicolas e Giovana</h3><br>
+                <P class="concerto" style="color: black;">Foto de casamento</P><br>
+                <p class="concerto" style="color: black;">Igreja Matriz Mococa-sp</p><br>
+            </div>
+
+            <div class="skill-card">
+                <img src="/_Imagens/formatura2.jpg" alt=""><br>
+                <h3 class="concerto" style="color: black;">Formatura Medicina</h3><br>
+                <P class="concerto" style="color: black;">Foto de formatura</P><br>
+                <p class="concerto" style="color: black;">Praça Belmiro Santos-sp</p><br>
+            </div>
+
+            <div class="skill-card">
+                <img src="/_Imagens/Festa3.jpg" alt=""><br>
+                <h3 class="concerto" style="color: black;">Festa de 15 anos da Giovana</h3><br>
+                <P class="concerto" style="color: black;">Foto de aniversario</P><br>
+                <p class="concerto" style="color: black;">Buffer Fauze Karam</p><br>
+            </div>
+
+            <div class="skill-card">
+                <img src="/_Imagens/bebe4.jpg" alt=""><br>
+                <h3 class="concerto" style="color: black;">Ensaio fotografico</h3><br>
+                <P class="concerto" style="color: black;">Foto de mesversario</P><br>
+                <p class="concerto" style="color: black;">Estudios Tick</p><br>
+            </div>
+
+            <div class="skill-card">
+                <img src="/_Imagens/familia5.jpg" alt=""><br>
+                <h3 class="concerto" style="color: black;">Ensaio fotografico em familia</h3><br>
+                <P class="concerto" style="color: black;">Foto de familia</P><br>
+                <p class="concerto" style="color: black;">Estudios Tick</p><br>
+            </div>
+
+            <div class="skill-card">
+                <img src="/_Imagens/de.webp" alt=""><br>
+                <h3 class="concerto" style="color: black;">Pedido de casamento</h3><br>
+                <P class="concerto" style="color: black;">Foto de noivado</P><br>
+                <p class="concerto" style="color: black;">Torre Eiffel-Fr</p><br>
+            </div>
+        </div>
+    </section>
+
+    <!-- contato Section -->
+
+    <section class="projects" id="contact">
+        <div class="heading">
+            <h2>Fale <span>Conosco</span></h2>
+        </div>
+        <div >
+            <form id="meuFormulario">
+                <div>
+                    <label class="fale" for="nome">Nome:</label><br>
+                    <input style="color: black;" class="enviu" type="text" id="nome" name="nome"><br><br><br>
+            
+                    <label class="fale" for="email">Email:</label><br>
+                    <input style="color: black;" class="enviu" type="email" id="email" name="email"><br><br><br>
+            
+                    <label class="fale" for="telefone">Telefone:</label><br>
+                    <input style="color: black;" class="enviu" type="number" id="telefone" name="telefone"><br><br><br>
+            
+                    <label class="fale" for="categoria">Categoria do evento:</label><br>
+                    <input class="enviu" style="color: black;" type="text" placeholder="Eventos" list="eventos">
+                    <datalist id="eventos">
+                        <option style="color: black;" value="">Eventos:</option>
+                        <option style="color: black;" >Casamento</option>
+                        <option style="color: black;" >Aniversario infantil</option>
+                        <option style="color: black;" >Aniversario de 15 anos</option>
+                        <option style="color: black;" >Ensaio fotografico</option>
+                        <option style="color: black;" >Formatura</option>
+                        <option style="color: black;" >Pedidos</option>
+                        <option style="color: black;" >Outros</option>
+                    </datalist>
+                </div><br><br>
+            
+                <div >
+                    <label class="fale">Receber notificação:</label><br><br>
+                        <input type="radio" id="sim" name="escolha" value="Sim">
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="nao" name="escolha" value="Não">
+                        <label for="nao">Não</label><br><br>
+                </div> 
+                
+                <input type="submit" class="Json" value="Json">
+                
+            </form>
+            <p id="resposta"></p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer class="final">
+        <br>
+        <h1 class="tituloF" >Tick Studio</h1>
+        <hr style="border: solid white 1px;">
+        <br><br><br>
+        <img  src="/_Imagens/tickstudio2.png" height="150" width="250">
+        <br><br><br><br>
+        <h3 class="textF">Desde o início dos tempos, a humanidade sempre teve o desejo de se registrar, seja como for. Embora o tempo tenha passado, algumas coisas, as que são verdadeiramente importantes, nunca mudam. Hoje, nossa empresa se dedica à preservação de nossa imagem, à preservação da sua imagem. Abrace sua história, registre-a hoje.</h3>
+        <div class="contatoF">
+            <p class="pF" >CONTATO:</p><br>
+            <p >+55 (23) 98814-8213</p><br>
+            <i class='bx bxl-whatsapp' > Enviar mensagem</i><br>
+            <i class='bx bx-envelope' > Contato@gmail.com</i><br>
+            <br>
+            <i class='bx bxl-youtube'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-facebook-square'></i>
+        </div>
+        
+    </footer>
+
+
+
+
+
+
+
+
+     <script>
+const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const regexTelefone = /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/;
+
+// Seleciona o formulário
+let formulario = document.querySelector("#meuFormulario");
+
+// Seleciona o parágrafo de resposta
+let respostaParagrafo = document.querySelector("#resposta");
+
+// Adiciona um evento de envio ao formulário
+formulario.addEventListener("submit", function(event){
+    // Impede o comportamento padrão do formulário (enviar os dados para o servidor)
+    event.preventDefault();
+
+    // Cria um objeto para armazenar os dados do formulário
+    let dados = {};
+
+    // Adicionar os valores dos campos do formulário ao objeto
+    dados.nome = document.querySelector("#nome").value;
+    dados.email = document.querySelector("#email").value;
+    dados.telefone = document.querySelector("#telefone").value;
+    dados.categoria = document.querySelector('input[list="eventos"]').value;
+    dados.escolha = document.querySelector('input[name="escolha"]:checked').value;
+
+    // Validação dos campos
+    if (!regexEmail.test(dados.email)) {
+        respostaParagrafo.innerHTML = "Email inválido";
+        return; // Impede que o formulário seja enviado se o email for inválido
+    }
+
+    if (!regexTelefone.test(dados.telefone)) {
+    respostaParagrafo.innerHTML = "Telefone inválido";
+    return; // Impede que o formulário seja enviado se o telefone for inválido
+}
+
+    // Se todos os campos estiverem válidos, continue o processamento
+    let dadosJSON = JSON.stringify(dados);
+
+    respostaParagrafo.innerHTML = "Nome: " + dados.nome + "<br><br>Email: " + dados.email + "<br><br>Telefone: " + dados.telefone 
+    + "<br><br>Categoria do evento: " + dados.categoria + "<br><br>Notificação: " + dados.escolha;
+
+});      
+    </script>
+</div>
+    
+</body>
+</html>
